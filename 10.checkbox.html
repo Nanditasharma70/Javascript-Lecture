@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="selectAllCheckbox" value="btn" type="button" onclick="myfun()">select All</button><br>
+    <input type="checkbox" name="fruit" value="Mango">Mango<br>
+    <input type="checkbox" name="fruit" value="Banana">Banana<br>
+    <input type="checkbox" name="fruit" value="Apple">Apple<br>
+    <input type="checkbox" name="fruit" value="Orange">Orange<br>
+    <input type="checkbox" name="fruit" value="Kiwi">Kiwi<br>
+
+    <script>
+        function myfun() {
+            var mySelectBtn = document.getElementById("selectAllCheckbox");
+            var myCheckbox = document.getElementsByName("fruit");
+
+            if (mySelectBtn.click) {
+                for (var i = 0; i < myCheckbox.length; i++) {
+                    myCheckbox[i].checked = true;
+                }
+            } else {
+                for (var i = 0; i < myCheckbox.length; i++) {
+                    myCheckbox[i].checked = false;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

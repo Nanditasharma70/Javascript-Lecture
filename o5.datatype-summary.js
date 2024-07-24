@@ -42,3 +42,22 @@ console.log(obj.name)
  }
  console.log(typeof myfunction)
  myfunction()
+
+
+ //stack(primitive) //heap(Non Primitive)
+ let myNewName = "Nandita"
+  let myAnotherName = myNewName
+  myAnotherName = "miss Simple"
+
+
+  console.log(myAnotherName)
+  console.log(myNewName)
+
+  let userOne ={
+    email:"nanditasharma9910@gmail.com",
+    upi:"user@ybl",
+  }
+  let userTwo = userOne
+  userTwo.email="nandita@gmail.com"
+  console.log(userOne.email)
+  console.log(userTwo.email)
